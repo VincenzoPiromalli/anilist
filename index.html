@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="site-theme-dark">
+    <head>
+        <meta charset="UTF-8">
+        <title>Anilist - fr0zen</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Overpass:400,600,700,800&amp;display=swap'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div id="app">
+            <div data-v-5d42c114="" id="progress-bar" class="progress fixed show"></div>
+            <div data-v-62eacfff="" id="nav" class="nav nav-unscoped"> </div>
+            <div data-v-8aeb5e9a="" class="mobile-nav guest" style="display:none;">
+            </div>
+            <div class="page-content" id="main">
+                <div data-v-219025ae="" class="search">
+                    <div data-v-219025ae="" class="container">
+                        <div data-v-322766c0="" data-v-219025ae="" class="wrap">
+                            <div data-v-322766c0="" class="mobile-header" style="display:none;"> Browse <span data-v-322766c0="" class="type"> Anime <i data-v-322766c0="" class="icon fa fa-chevron-down fa-w-14"></i></span> </div>
+                        </div>
+                        <div data-v-84c4e64c="" data-v-219025ae="" class="filters-wrap primary-filters">
+                            <div data-v-84c4e64c="" class="filters">
+                                <div data-v-84c4e64c="" class="filter filter-select">
+                                    <div data-v-84c4e64c="" class="name">Search</div>
+                                    <div data-v-84c4e64c="" class="search-wrap"> <i data-v-84c4e64c class="icon left fa fa-search fa-w-16"></i><input data-v-84c4e64c="" type="search" autocomplete="off" class="search"> </div>
+                                </div>
+                                <div data-v-84c4e64c="" class="filter filter-select">
+                                    <div data-v-84c4e64c="" class="name">genres</div>
+                                    <div data-v-e3e1e202="" data-v-84c4e64c="" tabindex="-1" class="genres select-wrap">
+                                        <div data-v-e3e1e202="" class="select">
+                                            <div data-v-e3e1e202="" class="value-wrap">
+                                                <div data-v-e3e1e202="" class="placeholder"> Any </div><input data-v-e3e1e202="" type="search" autocomplete="off" class="filter">
+                                            </div><i data-v-e3e1e202="" class="icon fa fa-chevron-down fa-w-14 fa-fw"></i>
+                                        </div>
+                                        <div data-v-e3e1e202="" class="genres options">
+                                            <section data-v-e3e1e202="" class="ps-container scroll-wrap genres">
+                                                <div data-v-e3e1e202="" class="option-group genres"> </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-84c4e64c="" class="filter filter-select">
+                                    <div data-v-84c4e64c="" class="name">year</div>
+                                    <div id="years"></div>
+                                    <div data-v-e3e1e202="" data-v-84c4e64c="" tabindex="-1" class="year select-wrap">
+                                        <div data-v-e3e1e202="" class="select">
+                                            <div data-v-e3e1e202="" class="value-wrap">
+                                                <div data-v-e3e1e202="" class="placeholder"> Any </div><input data-v-e3e1e202="" type="search" autocomplete="off" class="filter">
+                                            </div><i data-v-e3e1e202="" class="icon fa fa-chevron-down fa-w-14 fa-fw"></i>
+                                        </div>
+                                        <div data-v-e3e1e202="" class="year options">
+                                            <section data-v-e3e1e202="" class="ps-container scroll-wrap year">
+                                                <div data-v-e3e1e202="" class="option-group years"> </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-84c4e64c="" class="filter filter-select">
+                                    <div data-v-84c4e64c="" class="name">season</div>
+                                    <div data-v-e3e1e202="" data-v-84c4e64c="" tabindex="-1" class="season select-wrap">
+                                        <div data-v-e3e1e202="" class="select">
+                                            <div data-v-e3e1e202="" class="value-wrap">
+                                                <div data-v-e3e1e202="" class="placeholder"> Any </div>
+                                                <div data-v-e3e1e202="" class="filter"></div>
+                                            </div><i data-v-e3e1e202="" class="icon fa fa-chevron-down fa-w-14 fa-fw"></i>
+                                        </div>
+                                        <div data-v-e3e1e202="" class="season options">
+                                            <section data-v-e3e1e202="" class="ps-container scroll-wrap">
+                                                <div data-v-e3e1e202="" class="option-group seasons"> </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-84c4e64c="" class="filter filter-select">
+                                    <div data-v-84c4e64c="" class="name">format</div>
+                                    <div data-v-e3e1e202="" data-v-84c4e64c="" tabindex="-1" class="format select-wrap">
+                                        <div data-v-e3e1e202="" class="select">
+                                            <div data-v-e3e1e202="" class="value-wrap">
+                                                <div data-v-e3e1e202="" class="placeholder"> Any </div>
+                                                <div data-v-e3e1e202="" class="filter"></div>
+                                            </div><i data-v-e3e1e202="" class="icon fa fa-chevron-down fa-w-14 fa-fw"></i>
+                                        </div>
+                                        <div data-v-e3e1e202="" class="format options">
+                                            <section data-v-e3e1e202="" class="ps-container scroll-wrap format">
+                                                <div data-v-e3e1e202="" class="option-group formats"> </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-acf5fe42="" data-v-84c4e64c="" class="extra-filters-wrap">
+                                <div data-v-acf5fe42="" class="open-btn"><i data-v-acf5fe42="" class="icon fa fa-sliders-h fa-w-16"></i></div>
+                            </div>
+                        </div>
+                        <div data-v-219025ae="" class="secondary-filters">
+                            <div data-v-cd1dc2b6="" data-v-219025ae="" class="active-filters"> </div>
+                        </div>
+                        <div data-v-5ca09bd3="" data-v-219025ae="" class="search-landing landing">
+                            <div data-v-5ca09bd3="" class="landing-section trending"> <a data-v-5ca09bd3="" href="#trending" class="title link">
+                                <h3 data-v-5ca09bd3="" class="title loading">Trending now</h3>
+                                <div data-v-5ca09bd3="" class="expand">View All</div>
+                            </a>
+                            <div data-v-5ca09bd3="" class="results"> </div>
+                            </div>
+                            <div data-v-5ca09bd3="" class="landing-section season"> <a data-v-5ca09bd3="" href="#this-season" class="title link">
+                                <h3 data-v-5ca09bd3="" class="title loading">Popular this season</h3>
+                                <div data-v-5ca09bd3="" class="expand">View All</div>
+                            </a>
+                            <div data-v-5ca09bd3="" class="results"> </div>
+                            </div>
+                            <div data-v-5ca09bd3="" class="landing-section nextSeason"> <a data-v-5ca09bd3="" href="#next-season" class="title link">
+                                <h3 data-v-5ca09bd3="">Upcoming next season</h3>
+                                <div data-v-5ca09bd3="" class="expand">View All</div>
+                            </a>
+                            <div data-v-5ca09bd3="" class="results"> </div>
+                            </div>
+                            <div data-v-5ca09bd3="" class="landing-section popular"> <a data-v-5ca09bd3="" href="#popular" class="title link">
+                                <h3 data-v-5ca09bd3="">All time popular</h3>
+                                <div data-v-5ca09bd3="" class="expand">View All</div>
+                            </a>
+                            <div data-v-5ca09bd3="" class="results"> </div>
+                            </div>
+                            <div data-v-5ca09bd3="" class="landing-section top"> <a data-v-5ca09bd3="" href="#top-100" class="title link">
+                                <h3 data-v-5ca09bd3="">Top 100 Anime</h3>
+                                <div data-v-5ca09bd3="" class="expand">View All</div>
+                            </a>
+                            <div data-v-5ca09bd3="" class="results table"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partial:single -->
+            <div id="single" class="page-content" style="display:none;">
+                <div data-v-c93e1c70="" class="media media-page-unscoped media-anime" slug="Blue-Lock">
+                    <div data-v-5776f768="" data-v-c93e1c70="" class="header-wrap">
+                        <div data-v-5776f768="" class="banner">
+                            <div data-v-5776f768="" class="shadow"></div>
+                        </div>
+                        <div data-v-5776f768="" class="header">
+                            
+                            <div data-v-5776f768="" class="container" style="min-height: 250px;">
+                                <div data-v-5776f768="" class="cover-wrap overlap-banner">
+                                    <div data-v-5776f768="" class="cover-wrap-inner" style="position: static;">
+                                        <img data-v-5776f768="" class="cover" />
+                                        <div data-v-5776f768="" class="actions">
+                                            <div data-v-5776f768="" class="list">
+                                                <div data-v-5776f768="" class="add">
+                                                    Add to List
+                                                </div>
+                                                <div data-v-5776f768="" class="dropdown el-dropdown">
+                                                    <span data-v-5776f768="" class="el-dropdown-link el-dropdown-selfdefine" aria-haspopup="list" aria-controls="dropdown-menu-1437" role="button" tabindex="0"><i data-v-5776f768="" class="icon fa fa-chevron-down fa-w-14 fa-fw" style="color:white;"></i></span>
+                                                    <ul data-v-5776f768="" class="el-dropdown-menu el-popper el-dropdown-menu--medium" style="display: none;" id="dropdown-menu-1437">
+                                                        
+                                                        <li data-v-5776f768="" tabindex="-1" class="el-dropdown-menu__item">
+                                                            
+                                                            Set as Watching
+                                                        </li>
+                                                        <li data-v-5776f768="" tabindex="-1" class="el-dropdown-menu__item">
+                                                            Set as Planning
+                                                        </li>
+                                                        <li data-v-5776f768="" tabindex="-1" class="el-dropdown-menu__item el-dropdown-menu__item--divided">
+                                                            Open List Editor
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div data-v-0228dea0="" data-v-5776f768="" class="favourite"><i data-v-0228dea0="" class="fa fa-heart fa-w-16"></i>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-5776f768="" class="content">
+                                    <h1 data-v-5776f768="">
+                                        
+                                    </h1>
+                                    <p data-v-5776f768="" class="description"></p>
+                                    
+                                    <div data-v-5776f768="" class="nav">
+                                        <a data-v-5776f768="" href="#" class="link router-link-exact-active router-link-active">
+                                            Overview
+                                        </a>
+                                        <a data-v-5776f768="" href="#" class="link">
+                                            Characters
+                                            </a> <a data-v-5776f768="" href="#" class="link">
+                                            Staff
+                                        </a>
+                                        <a data-v-5776f768="" href="#" class="link">
+                                            Stats
+                                            </a> <a data-v-5776f768="" href="#" class="link">
+                                            Social
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-c93e1c70="" class="content container">
+                        <div data-v-c93e1c70="" class="sidebar" style="margin-top: 0px;">
+                            
+                            <div data-v-d3a518a6="" data-v-c93e1c70="" class="data">
+                                
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Format</div>
+                                    <div data-v-d3a518a6="" class="value" id="format"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Episodes</div>
+                                    <div data-v-d3a518a6="" class="value" id="episodes"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type"><span data-v-d3a518a6="">Episode</span>
+                                        Duration
+                                    </div>
+                                    <div data-v-d3a518a6="" class="value" id="duration"></div>
+                                </div>
+                                
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Status</div>
+                                    <div data-v-d3a518a6="" class="value" id="status">Releasing</div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Year</div>
+                                    <div data-v-d3a518a6="" class="value" id="year"></div>
+                                </div>
+                                
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Season</div>
+                                    <div data-v-d3a518a6="" class="value" id="season"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Average Score</div>
+                                    <div data-v-d3a518a6="" class="value" id="rating"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Popularity</div>
+                                    <div data-v-d3a518a6="" class="value" id="popularity"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set data-list">
+                                    <div data-v-d3a518a6="" class="type">Studios</div>
+                                    <div data-v-d3a518a6="" class="value" id="studio"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Source</div>
+                                    <div data-v-d3a518a6="" class="value" id="source"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Hashtag</div>
+                                    <div data-v-d3a518a6="" class="value" id="hashtag"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set data-list">
+                                    <div data-v-d3a518a6="" class="type">Genres</div>
+                                    <div data-v-d3a518a6="" class="value" id="sidegenres">
+                                    </div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Romaji</div>
+                                    <div data-v-d3a518a6="" class="value" id="romaji"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">English</div>
+                                    <div data-v-d3a518a6="" class="value" id="english"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set">
+                                    <div data-v-d3a518a6="" class="type">Native</div>
+                                    <div data-v-d3a518a6="" class="value" id="native"></div>
+                                </div>
+                                <div data-v-d3a518a6="" class="data-set data-list">
+                                    <div data-v-d3a518a6="" class="type">Synonyms</div>
+                                    <div data-v-d3a518a6="" class="value" id="synonyms"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-cdf07c88="" data-v-c93e1c70="" class="overview">
+                            
+                            <div data-v-cdf07c88="" class="description-wrap">
+                                <h2 data-v-cdf07c88="">Description</h2>
+                                <p data-v-cdf07c88="" class="description content-wrap">
+                                </p>
+                            </div>
+                            <div data-v-4650c4e0="" data-v-cdf07c88="" class="relations">
+                                <h2 data-v-4650c4e0="">Relations</h2>
+                                <div data-v-4650c4e0="" class="grid-wrap" id="relations">
+                                    
+                                </div>
+                            </div>
+                            <div data-v-cdf07c88="" class="characters">
+                                <h2 class="link">
+                                    Characters
+                                </h2>
+                                <div class="grid-wrap" id="character">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div data-v-cdf07c88="" class="staff">
+                                <h2 class="link">
+                                    Staff
+                                </h2>
+                                <div class="grid-wrap" id="staff">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div data-v-cdf07c88="" class="wrap" id="embed">
+                                
+                            </div>
+                            <div data-v-597da2e4="" data-v-cdf07c88="" class="recommendations">
+                                <h2 data-v-597da2e4="">
+                                    Recommendations
+                                    <div data-v-597da2e4="" class="view-all">
+                                        
+                                        <div data-v-597da2e4="" class="toggle">
+                                            View All Recommendations
+                                        </div>
+                                    </div>
+                                </h2>
+                                <div data-v-597da2e4="" class="wrap" id="recommendations">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div data-v-cdf07c88="" class="grid-section-wrap">
+                                <div data-v-19b948c8="" data-v-cdf07c88="">
+                                    <h2 data-v-19b948c8="" class="link"><a data-v-19b948c8="" href="#" class="">
+                                        Threads
+                                    </a>
+                                    
+                                    </h2>
+                                    <div data-v-19b948c8="" class="threads">
+                                        <div data-v-19b948c8="" class="thread-wrap"><a data-v-19b948c8="" href="#" class="no-threads">
+                                            No forum threads yet, create one?
+                                        </a></div>
+                                        <div data-v-6f203cf2="" data-v-19b948c8="" class="scroller" action="function () { [native code] }">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- single -->
+            <div data-v-0f519cab="" class="wrap">
+                <div data-v-0f519cab="" class="footer" id="footer"> </div>
+            </div>
+        </div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.8.3/lazyload.min.js'></script>
+        <script  src="./script.js"></script>
+    </body>
+</html>
